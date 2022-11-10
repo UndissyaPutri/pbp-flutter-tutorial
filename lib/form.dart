@@ -21,7 +21,7 @@ class _MyFormPageState extends State<MyFormPage> {
   List<String> listKelasPBP = ['A', 'B', 'C', 'D', 'E', 'F', 'KI'];
   bool _nilaiSwitch = false;
 
-  showJenjang() {
+  dataJenjang() {
     if (jenjangSarjana) {
       return const Text("Jenjang: Sarjana");
     } else if (jenjangDiploma) {
@@ -263,7 +263,7 @@ class _MyFormPageState extends State<MyFormPage> {
                                     child: Column(
                                       children: [
                                         Text('Nama Lengkap: ' + _namaLengkap),
-                                        showJenjang(),
+                                        dataJenjang(),
                                         Text('Umur: ' + umur.toString()),
                                         Text('Kelas PBP: ' + kelasPBP),
                                         Text('Practice Mode: ' +
